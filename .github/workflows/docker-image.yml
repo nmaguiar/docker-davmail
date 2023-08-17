@@ -37,6 +37,7 @@ jobs:
         tags: nmaguiar/davmail:build
 
   Scan-Images:
+    needs      : build
     runs-on    : ubuntu-latest
     permissions:
       contents: write
